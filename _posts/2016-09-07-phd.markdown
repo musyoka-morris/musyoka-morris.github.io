@@ -1,0 +1,10 @@
+---
+layout: post
+comments: true
+title:  "Linear regression"
+excerpt: "Linear regression is one of the machine learning methods that is easy to learn and understand."
+date:   2016-09-07 19:00:00
+mathjax: false
+---
+
+## Content coming soon.

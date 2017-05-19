@@ -1,0 +1,25 @@
+<header class="site-header">
+
+  <div class="wrap">
+
+    <a class="site-title" href="{{ site.baseurl }}/">
+      <span class="fa fa-feed"></span>
+      {{ site.title }}
+    </a>
+    
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <span class="fa fa-feed"></span>
+      </a>
+      <div class="trigger">
+        <a class="page-link" href="{{ site.baseurl }}/">Home</a>
+        {% for page in site.pages %}
+          {% if page.title %}
+            <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </nav>
+  </div>
+
+</header>
