@@ -8,8 +8,14 @@
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Intersection of Computer Science and Mathematics.">
     <link rel="canonical" href="http://localhost:4000/contact/">
-    <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Musyoka Morris blog posts" />
+    <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Musyoka Morris Blog posts" />
+
+    <!-- FontAwesome -->
     <script src="https://use.fontawesome.com/89a1b8545e.js"></script>
+
+    <!-- Bootstrap compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -35,8 +41,11 @@
   <div class="wrap">
 
     <a class="site-title" href="/">
-      <span class="fa fa-feed"></span>
-      Musyoka Morris blog
+      <span class="fa-stack">
+        <i class="fa fa-square-o fa-stack-2x"></i>
+        <i class="fa fa-feed fa-stack-1x"></i>
+      </span>
+      Musyoka Morris Blog
     </a>
     
     <nav class="site-nav">
@@ -44,7 +53,7 @@
         <span class="fa fa-feed"></span>
       </a>
       <div class="trigger">
-        <a class="page-link" href="/">Home</a>
+        <a class="page-link" href="/">Blog</a>
         
           
             <a class="page-link" href="/about/">About</a>
@@ -74,7 +83,87 @@
   </header>
 
   <article class="post-content">
-  <p>I am <strong>Morris Musyoka</strong>.</p>
+  <hr/>
+<div class="text-center">
+    <h2>Social Media</h2>
+    <div class="social-icons">
+
+        
+        <a href="https://github.com/musyoka-morris" class="fa-stack fa-3x">
+            <i class="fa fa-circle fa-stack-2x outer"></i>
+            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/musyoka_mm" class="fa-stack fa-3x">
+            <i class="fa fa-circle fa-stack-2x outer"></i>
+            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+        </a>
+        
+
+        
+        <a href="https://www.linkedin.com/in/musyoka-mm" class="fa-stack fa-3x">
+            <i class="fa fa-circle fa-stack-2x outer"></i>
+            <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+        </a>
+        
+
+    </div>
+</div>
+
+<h1></h1>
+
+<div>
+    <form class="well form-horizontal" action="https://formspree.io/musyokamorris@gmail.com" method="post"  id="contact_form">
+        <fieldset>
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-3 control-label">Name</label>
+                <div class="col-md-7 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                        <input  name="name" placeholder="Name" class="form-control"  type="text">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-3 control-label">E-Mail</label>
+                <div class="col-md-7 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                        <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Text area -->
+            <div class="form-group">
+                <label class="col-md-3 control-label">Message</label>
+                <div class="col-md-7 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                        <textarea class="form-control" name="comment" rows="4" placeholder="Message"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Success message -->
+            <div class="alert alert-success hidden" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
+
+            <!-- Button -->
+            <div class="form-group">
+                <label class="col-md-3 control-label"></label>
+                <div class="col-md-7">
+                    <button type="submit" class="btn btn-warning" >Send <span class="glyphicon glyphicon-send"></span></button>
+                </div>
+            </div>
+
+        </fieldset>
+    </form>
+</div>
 
   </article>
 

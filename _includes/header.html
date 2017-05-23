@@ -3,7 +3,10 @@
   <div class="wrap">
 
     <a class="site-title" href="{{ site.baseurl }}/">
-      <span class="fa fa-feed"></span>
+      <span class="fa-stack">
+        <i class="fa fa-square-o fa-stack-2x"></i>
+        <i class="fa fa-feed fa-stack-1x"></i>
+      </span>
       {{ site.title }}
     </a>
     
@@ -12,7 +15,7 @@
         <span class="fa fa-feed"></span>
       </a>
       <div class="trigger">
-        <a class="page-link" href="{{ site.baseurl }}/">Home</a>
+        <a class="page-link" href="{{ site.baseurl }}/">Blog</a>
         {% for page in site.pages %}
           {% if page.title %}
             <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>

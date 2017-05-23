@@ -8,8 +8,14 @@
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Intersection of Computer Science and Mathematics.">
     <link rel="canonical" href="http://localhost:4000/about/">
-    <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Musyoka Morris blog posts" />
+    <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Musyoka Morris Blog posts" />
+
+    <!-- FontAwesome -->
     <script src="https://use.fontawesome.com/89a1b8545e.js"></script>
+
+    <!-- Bootstrap compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -35,8 +41,11 @@
   <div class="wrap">
 
     <a class="site-title" href="/">
-      <span class="fa fa-feed"></span>
-      Musyoka Morris blog
+      <span class="fa-stack">
+        <i class="fa fa-square-o fa-stack-2x"></i>
+        <i class="fa fa-feed fa-stack-1x"></i>
+      </span>
+      Musyoka Morris Blog
     </a>
     
     <nav class="site-nav">
@@ -44,7 +53,7 @@
         <span class="fa fa-feed"></span>
       </a>
       <div class="trigger">
-        <a class="page-link" href="/">Home</a>
+        <a class="page-link" href="/">Blog</a>
         
           
             <a class="page-link" href="/about/">About</a>
@@ -74,9 +83,19 @@
   </header>
 
   <article class="post-content">
-  <p>I am <strong>Morris Musyoka</strong>.
-My interests are in the intersection between Mathematics and Computer Science.</p>
-
+  <hr/>
+<div class="row">
+    <div class="col-md-5 text-center">
+        <img class="ppic" src="../me.jpg" />
+    </div>
+    <div class="col-md-7">
+        <p style="margin-top: 50px;">
+            I am <strong>Musyoka Morris</strong>.
+            My professional interests are in projects that intersect Mathematics and Computer Science.
+            More specific, I am enthusiastic about Machine Learning and Data Analytics. I am a pragmatic problem solver and a constant learner always searching and using the best tools and frameworks for a given problem.
+        </p>
+    </div>
+</div>
   </article>
 
     <!-- disqus comments -->

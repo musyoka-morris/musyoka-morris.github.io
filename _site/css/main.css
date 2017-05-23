@@ -86,7 +86,8 @@ a:visited { color: #205caa; }
   padding-left: 10px;
 }
 
-.site-footer a:hover {
+.site-footer a:hover,
+a.site-title:hover {
   text-decoration: none;
   color: #990073;
 }
@@ -103,6 +104,15 @@ a:visited { color: #205caa; }
   letter-spacing: -.3px;
   color: #828282;
 }
+
+/* about page */
+/*--------------------------------------------------------*/
+.ppic {
+  max-width: 250px;
+  border-radius:50%;
+  border: 5px solid gray;
+}
+
 
 
 
